@@ -21,12 +21,11 @@ module.exports = function(app){
     sender.sendMail()
     .then(function(){
       res.setHeader('Access-Control-Allow-Origin','*');
-      console.log('success')
       res.send('success')
     })
     .catch(function(){
       res.setHeader('Access-Control-Allow-Origin','*');
-      res.send('error')
+      res.send({error: true})
     })
 
   })
