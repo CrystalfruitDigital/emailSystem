@@ -22,9 +22,10 @@ module.exports = function(app){
     .then(function(){
       res.setHeader('Access-Control-Allow-Origin','*');
       console.log('success')
-      res.end('success')
+      res.send('success')
     })
     .catch(function(){
+      res.setHeader('Access-Control-Allow-Origin','*');
       res.send('error')
     })
 
