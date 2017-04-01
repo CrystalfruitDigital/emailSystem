@@ -20,6 +20,7 @@ module.exports = function(app){
 
     sender.sendMail()
     .then(function(){
+      res.writeHead(200, {'Content-Type': 'text/plain'});
       console.log('success')
       res.send('success')
     })
