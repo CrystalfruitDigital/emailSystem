@@ -16,6 +16,7 @@ $(document).ready(function(){
     $.ajax({
       url: "http://ec2-54-146-129-247.compute-1.amazonaws.com/mailer/sendMail",
       method: "POST",
+      crossDomain: true,
       data: values,
       dataType: "text",
       success: function (data) {

@@ -20,7 +20,7 @@ module.exports = function(app){
 
     sender.sendMail()
     .then(function(){
-      res.writeHead(200, {'Content-Type': 'text/plain'});
+      res.setHeader('Access-Control-Allow-Origin','*');
       console.log('success')
       res.end('success')
     })
