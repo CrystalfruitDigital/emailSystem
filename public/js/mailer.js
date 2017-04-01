@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     
     $.ajax({
-      url: "/mailer/sendMail",
+      url: "http://ec2-54-146-129-247.compute-1.amazonaws.com/mailer/sendMail",
       method: "POST",
       data: values,
       dataType: "text",
