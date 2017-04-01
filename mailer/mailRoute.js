@@ -22,7 +22,7 @@ module.exports = function(app){
     .then(function(){
       res.writeHead(200, {'Content-Type': 'text/plain'});
       console.log('success')
-      res.send('success')
+      res.end('success')
     })
     .catch(function(){
       res.send('error')
