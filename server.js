@@ -15,7 +15,7 @@ app.use(express.static('public'))
 app.use(function (req, res, next) {
 
   // Website you wish to allow to connect
-  res.setHeader('Access-Control-Allow-Origin', ' http://ec2-54-146-129-247.compute-1.amazonaws.com');
+  res.setHeader('Access-Control-Allow-Origin', 'http://ec2-54-146-129-247.compute-1.amazonaws.com/mailer/sendMail');
 
   // Request methods you wish to allow
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
