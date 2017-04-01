@@ -4,6 +4,7 @@
 let express = require('express')
 let app = express()
 let bodyParser = require('body-parser')
+let cors = require('cors');
 
 /**
 * App Setup 
@@ -11,6 +12,7 @@ let bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 app.use(express.static('public'))
+app.use(cors())
 
 app.use(function (req, res, next) {
 
